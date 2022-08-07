@@ -1,1 +1,20 @@
 <paste log output from Kubernetes-mediated prediction, here>
+(.devops) shuayb@LAPTOP-59CMI8H3:/mnt/c/Users/Shuayb Popoola/Desktop/Udacity Nanodegree/Project4_submission/project-ml-microservice-kubernetes$ ./make_prediction.sh
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
+
+(.devops) shuayb@LAPTOP-59CMI8H3:/mnt/c/Users/Shuayb Popoola/Desktop/Udacity Nanodegree/Project4_submission/project-ml-microservice-kubernetes$ [2022-08-07 18:36:19,880] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2022-08-07 18:36:19,917] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-08-07 18:36:19,939] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2022-08-07 18:36:19,952] INFO in app: prediction:
+[20.35373177134412]
+172.17.0.1 - - [07/Aug/2022 18:36:19] "POST /predict HTTP/1.1" 200 -
