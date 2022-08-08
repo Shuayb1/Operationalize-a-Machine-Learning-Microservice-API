@@ -43,3 +43,4 @@ source .devops/bin/activate
 * Create Flask app in Container using `./run_docker.sh`
 * Start Kubernetes cluster `minikube start`
 * Deploy Cointainer in Kubernetes using via kubectl by running `./run_kubernetes.sh`
+
